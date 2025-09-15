@@ -25,3 +25,6 @@ Ce projet permet de configurer un ESP32 sans liaison série :
 2. Au démarrage, maintenir le bouton **OK** pendant l’invitation pour entrer les identifiants.
 3. Valider chaque champ par un appui long.
 4. Une fois configuré, l’ESP32 se reconnecte automatiquement après un redémarrage.
+
+---
+💡 Ce projet est **Open Source** : vous êtes libre de l’utiliser, le modifier et le partager, tant que vous citez la source.
