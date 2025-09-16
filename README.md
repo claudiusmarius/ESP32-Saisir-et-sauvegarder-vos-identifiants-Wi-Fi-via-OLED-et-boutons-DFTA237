@@ -40,7 +40,6 @@ Après redémarrage :
 | `schema.pdf` |
 | `README.md` | Ce document |
 
-> Tu peux ajouter librement d’autres documents (photos, notes, etc.).
 
 ---
 
