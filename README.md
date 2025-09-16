@@ -12,7 +12,7 @@ Elles sont ensuite sauvegardées dans la mémoire **NVS** de l’ESP32 (stockage
 
 Après redémarrage :
 
-- L’appareil affiche un message invitant l’utilisateur à faire un **appui long sur le bouton OK** (pendant 12 s) pour reconfigurer les identifiants.  
+- L’appareil affiche un message (pendant 12 s) invitant l’utilisateur à faire un **appui long sur le bouton OK**  pour reconfigurer les identifiants.  
 - Si aucun appui n’est effectué, l’ESP32 tente de se connecter au Wi-Fi.  
 - Une fois connecté, il affiche :
   - l’état de connexion (**GOOD / NO GOOD**),
@@ -25,7 +25,7 @@ Après redémarrage :
 
 ## 🛠️ Matériel requis
 
-- ESP32 (DevKit, WROOM ou WROVER)  
+- ESP32 (DevKit, WROOM ou WROVER...)  
 - Écran OLED SSD1306 (0.91", I²C, adresse par défaut `0x3C`)  
 - 3 boutons poussoirs NO (tous reliés au GND pour le commun)  
 - Alimentation 5 V (via USB ou broche `VIN`)  
@@ -37,8 +37,7 @@ Après redémarrage :
 | Fichier | Description |
 |---------|-------------|
 | `ESP32_WiFi_OLED.ino` | Sketch Arduino principal |
-| `schema.png` *(optionnel)* | Schéma de câblage / breadboard |
-| `gerber.zip` *(optionnel)* | Fichiers de fabrication PCB |
+| `schema.pdf` |
 | `README.md` | Ce document |
 
 > Tu peux ajouter librement d’autres documents (photos, notes, etc.).
@@ -48,21 +47,21 @@ Après redémarrage :
 ## 🚀 Utilisation
 
 1. **Téléversement du code**  
-   - Ouvre le fichier `ESP32_WiFi_OLED.ino` dans l’IDE Arduino.  
-   - Sélectionne la carte `ESP32 Dev Module`.  
-   - Installe les bibliothèques nécessaires :  
+   - Ouvrez le fichier `ESP32_WiFi_OLED.ino` dans l’IDE Arduino.  
+   - Sélectionnez la carte `ESP32 Dev Module`.  
+   - Installez les bibliothèques nécessaires :  
      - `WiFi.h` (inclus dans l’ESP32 core)  
      - `Preferences.h` (inclus)  
      - `Wire.h` (I²C, inclus)  
      - [`Adafruit_GFX`](https://github.com/adafruit/Adafruit-GFX-Library)  
      - [`Adafruit_SSD1306`](https://github.com/adafruit/Adafruit_SSD1306)  
      - [`NTPClient`](https://github.com/arduino-libraries/NTPClient)  
-   - Compile et téléverse.
+   - Compilez et téléversez.
 
 2. **Première configuration**  
-   - Au démarrage, un message t’invite à faire un **appui long sur le bouton OK**.  
-   - Sélectionne les caractères de ton SSID à l’aide des boutons, puis valide par un appui long.  
-   - Recommence pour le mot de passe.  
+   - Au démarrage, un message vous invite à faire un **appui long sur le bouton OK**.  
+   - Sélectionnez les caractères de votre SSID à l’aide des boutons, puis valide par un appui long.  
+   - Recommencez pour le mot de passe.  
    - Les identifiants sont stockés en NVS.
 
 3. **Connexion & affichage**  
@@ -73,10 +72,10 @@ Après redémarrage :
 
 ## 💡 Astuces
 
-- Tu peux choisir d’afficher **l’adresse IP complète** ou **tronquée** (par exemple se terminant par `.xx.xx`).  
-  → Dans le code, deux lignes sont prévues : commente celle que tu ne veux pas utiliser (`//`).  
+- Vous pouvez choisir d’afficher **l’adresse IP complète** ou **tronquée** (par exemple se terminant par `.xx.xx`).  
+  → Dans le code, deux lignes sont prévues : commentez celle que vous ne voulez pas utiliser (`//`).  
 - Le régulateur interne permet d’alimenter l’ESP32 directement en **5 V** sur la broche `VIN` (mais ne jamais injecter plus de ~6 V).  
-- Pour des projets définitifs, ajoute un **condensateur** de filtrage entre `VIN` et `GND`.
+- Pour des projets définitifs, ajoutez un **condensateur de 100nF** de filtrage entre `VIN` et `GND`.
 
 ---
 
