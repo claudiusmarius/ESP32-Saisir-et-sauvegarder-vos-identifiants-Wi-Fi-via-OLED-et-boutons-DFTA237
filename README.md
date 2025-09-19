@@ -38,7 +38,7 @@ Après redémarrage :
 
 | Fichier | Description |
 |---------|-------------|
-| `ESP32_WiFi_OLED.ino` | Sketch Arduino principal |
+| `ESP32_WiFi_OLED.ino` | Code|
 | `schema.pdf` |
 | `Brochage ESP32` |
 | `README.md` | Ce document |
