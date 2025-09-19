@@ -38,7 +38,7 @@ Après redémarrage :
 
 | Fichier | Description |
 |---------|-------------|
-| `DFTA237ESP32DevModuleNVS.ino | Code|
+| `DFTA237ESP32DevModuleNVS.ino` | Code|
 | `schema.pdf` |
 | `Brochage ESP32` |
 | `README.md` | Ce document |
