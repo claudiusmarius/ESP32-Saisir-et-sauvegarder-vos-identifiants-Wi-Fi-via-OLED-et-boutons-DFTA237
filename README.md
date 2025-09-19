@@ -3,6 +3,8 @@
 > Nouveau concept : configuration Wi-Fi d’un ESP32 **sans liaison série**, uniquement avec 3 boutons et un mini écran OLED.
 
 ---
+Vidéo YouTube : https://youtu.be/dLGMKs4d2Co
+
 
 ## 📝 Présentation
 
