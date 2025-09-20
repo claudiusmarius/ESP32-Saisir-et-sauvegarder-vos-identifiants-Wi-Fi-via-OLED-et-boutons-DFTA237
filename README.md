@@ -49,7 +49,7 @@ Après redémarrage :
 ## 🚀 Utilisation
 
 1. **Téléversement du code**  
-   - Ouvrez le fichier `ESP32_WiFi_OLED.ino` dans l’IDE Arduino.  
+   - Ouvrez le fichier `DFTA237ESP32DevModuleNVS.ino` dans l’IDE Arduino.  
    - Sélectionnez la carte `ESP32 Dev Module`.  
    - Installez les bibliothèques nécessaires :  
      - `WiFi.h` (inclus dans l’ESP32 core)  
