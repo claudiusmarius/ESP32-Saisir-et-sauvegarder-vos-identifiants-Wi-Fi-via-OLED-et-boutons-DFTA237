@@ -67,7 +67,7 @@ Après redémarrage :
    - Les identifiants sont stockés en NVS.
 
 3. **Connexion & affichage**  
-   - Au "redémarrage", si les identifiants sont présents, l’ESP32 se connecte automatiquement.  
+   - Au démarrage, si les identifiants sont présents, l’ESP32 se connecte automatiquement.  
    - L’écran affiche l’état (**GOOD / NO GOOD**), l’adresse IP, puis l’heure locale.
 
 ---
